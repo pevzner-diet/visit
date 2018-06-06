@@ -26,4 +26,4 @@ defaults:
       path: ""
       type: "articles"
     values:
-      layout: "article"
+      layout: "page"
