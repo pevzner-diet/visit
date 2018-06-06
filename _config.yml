@@ -1,0 +1,29 @@
+theme: jekyll-theme-midnight
+
+# Site settings
+title: "Изумительная женщина"
+# email:
+# description:
+# baseurl: ""
+# url:
+
+# Build settings
+markdown: kramdown
+exclude: ["docker-compose.yml"]
+gems:
+    - jekyll-sitemap
+sass:
+  style: expanded
+  deploy_style: compressed
+
+collections:
+    articles:
+        output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"

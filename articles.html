@@ -1,0 +1,12 @@
+---
+layout: page
+title: Статьи
+title_id: Articles
+type: page
+---
+
+{% for post in site.articles %}
+    <li>
+      <a class="post-link" href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+    </li>
+{% endfor %}

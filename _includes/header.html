@@ -1,0 +1,15 @@
+<header class="site-header">
+    <nav class="site-nav">
+        <a href="{{ site.baseurl }}/index.html" class="site-nav-index">
+            <image src="{{ site.baseurl }}/assets/logo.png"/>
+        </a>
+        {% assign nav_pages = "Feedback,Articles,Safety,Meditation,Therapy" | split: ',' %}
+        {% for t in nav_pages %}
+        {% for p in site.pages %}
+        {% if p.title_id == t %}
+        <a class="site-nav-item" href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+    </nav>
+</header>
