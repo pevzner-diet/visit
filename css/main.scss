@@ -21,7 +21,7 @@ $text-color: $color-secondary-2-1;
 $page-bg-color: $color-primary-4;
 
 // Width of the content area
-$content-width:    950px;
+$content-width:    1100px;
 
 $on-palm:          600px;
 $on-laptop:        1100px;
@@ -85,7 +85,6 @@ h3 {
   border-radius: 1em;
   border: 0.1em solid #00000000;
   color: $color-secondary-2-0;
-  word-wrap: break-word;
 }
 
 .site-nav-item:hover {
